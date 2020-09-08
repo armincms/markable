@@ -1,0 +1,30 @@
+{
+    "name": "armincms/markable",
+    "description": "A Laravel Nova tool.",
+    "keywords": [
+        "laravel",
+        "armincms",
+        "markable"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "zareismail/markable": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Armincms\\Markable\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [ 
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
