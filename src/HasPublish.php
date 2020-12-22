@@ -12,7 +12,7 @@ trait HasPublish
      */
     public function asPublished()
     {
-        return $this->markAs($this->getPublishVlaue());
+        return $this->markAs($this->getPublishValue());
     } 
 
     /**
@@ -23,7 +23,7 @@ trait HasPublish
      */
     public function isPublished()
     {
-        return $this->markedAs($this->getPublishVlaue());
+        return $this->markedAs($this->getPublishValue());
     }
 
     /**
@@ -34,7 +34,7 @@ trait HasPublish
      */
     public function scopePublished($query)
     {
-        return $this->mark($this->getPublishVlaue());
+        return $this->mark($this->getPublishValue());
     }
 
     /**
@@ -44,7 +44,7 @@ trait HasPublish
      */
     public function setPublished()
     {
-        return $this->setMarkedAs($this->getPublishVlaue());
+        return $this->setMarkedAs($this->getPublishValue());
     }
 
     /**
@@ -52,7 +52,7 @@ trait HasPublish
      *
      * @return string
      */
-    public function getPublishVlaue()
+    public function getPublishValue()
     {
         return defined('static::PUBLISH_VALUE') ? static::PUBLISH_VALUE : 'published';
     }
