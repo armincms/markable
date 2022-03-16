@@ -34,7 +34,7 @@ trait HasPublish
      */
     public function scopePublished($query)
     {
-        return $this->mark($this->getPublishValue());
+        return $query->mark($this->getPublishValue());
     }
 
     /**
