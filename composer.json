@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.1.0",
-        "zareismail/markable": "~0.1"
+        "zareismail/markable": "^1.0"
     },
     "autoload": {
         "psr-4": {
